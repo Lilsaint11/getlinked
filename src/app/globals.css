@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: clashDisplay;
+  src: url(ClashDisplay-Bold.otf);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: montserrat;
+  src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: UnicaOne;
+  src: url(UnicaOne-Regular.ttf);
+}
+@font-face {
+  font-family: typo_hoop;
+  src: url(typo_hoop/Typo\ Hoop_Regular_Demo.otf);
+}
+
+@font-face {
+  font-family: Voces-Regular;
+  src: url(Voces-Regular.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(Volkhov-Regular.ttf);
+}
+
+.clashDisplay {
+  font-family: clashDisplay;
+}
+
+.montserrat {
+  font-family: montserrat;
+}
+
+.unicaOne {
+  font-family: UnicaOne;
+}
+
+.typo_hoop {
+  font-family: typo_hoop;
+}
+.voces {
+  font-family: Voces-Regular;
+}
+.volkhov {
+  font-family: Volkhov-Regular;
 }
