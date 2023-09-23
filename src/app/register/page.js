@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Confirmation from "../components/confirmation";
 import Header from "../components/header";
-
+import { motion } from "framer-motion"
 
 const Register = () => {
     const[registered, setRegistered] = useState(false)
@@ -36,16 +36,20 @@ const Register = () => {
         }
     }
     return ( 
-        <div className="bg-[#150E28] text-white ">
+        <motion.div
+        initial={{x:'100vw'}}
+        animate={{x:0 ,transition:{duration:0.2}}}
+        exit={{x:'-100vw',transition:{ease:'easeInOut'}}} 
+        className="bg-[#150E28] text-white ">
             <div className="max-sm:hidden">
                 <Header />
             </div>
             <div className="flex max-[750px]:flex-col gap-5 bg-[#150E28] text-white py-10 px-12 max-[335px]:px-5 items-center justify-center relative ">
                 {registered &&<Confirmation registered={registered} setRegistered={setRegistered}/>}
                 <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -top-1 -left-7"/>
-                <img src="/images/sata gra.png" alt="" className="absolute right-16 top-48  z-20"/>
-                <img src="/images/star-grey2.png" alt="" className="absolute left-5 top-[350px]  z-20 w-4"/>
-                <img src="/images/star pu.png" alt="" className="absolute right-6 bottom-64 z-20"/>
+                <img src="/images/sata gra.png" alt="" className="absolute right-16 top-48  z-20 animate-pulse"/>
+                <img src="/images/star-grey2.png" alt="" className="absolute left-5 top-[350px]  z-20 w-4 animate-pulse"/>
+                <img src="/images/star pu2.png" alt="" className="absolute right-6 bottom-64 z-20 animate-pulse"/>
                 <div className="w-full sm:hidden">
                     <h1 className="text-[15px] font-bold clashDisplay text-[#D434FE]">Register</h1>
                 </div>
@@ -53,6 +57,7 @@ const Register = () => {
                     <Image width="700" height="700" src="/images/man.webp" alt="" className="w-[200px] min-[750px]:w-full mt-2"/>
                 </div>
                 <div className="flex flex-col max-sm:items-center justify-center gap-2 relative z-40 min-[750px]:w-1/2 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 rounded-md w-full">
+                <h1 className="text-[32px] font-semibold clashDisplay text-[#D434FE] max-sm:hidden">Register</h1>
                         <div className="flex items-end gap-3">
                         <p className="text-[12px] min-[750px]:text-[14px] leading-[12px]">Be part of this movement!</p>
                         <div className="flex border-b border-[#D434FE] border-dashed w-20  justify-center">
@@ -107,7 +112,7 @@ const Register = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </motion.div>
      );
 }
  

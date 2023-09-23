@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { RiArrowLeftSLine } from 'react-icons/ri';
+import { motion } from "framer-motion"
 import Header from "../components/header";
  const Contact = () => {
      //stores form content into a state called formData which can be reset later
@@ -31,20 +32,24 @@ import Header from "../components/header";
     }
 
     return ( 
-        <div className="bg-[#150E28] text-white ">
+        <motion.div
+        initial={{x:'100vw'}}
+        animate={{x:0 ,transition:{duration:0.1}}}
+        exit={{x:'-100vw',transition:{ease:'easeInOut'}}} 
+        className="bg-[#150E28] text-white ">
             <div className="max-sm:hidden">
                 <Header />
             </div>
             <div className="flex max-[850px]:flex-col min-[850px]:flex-row-reverse gap-5 bg-[#150E28] text-white p-10  min-[850px]:p-16  max-[850px]:items-center justify-center min-[850px]:justify-between min-[850px]:pl-32 relative ">
             <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -top-5 -left-7"/>
-            <img src="/images/sata gra.png" alt="" className="absolute top-16 left-44 z-20"/>
-            <img src="/images/star-grey2.png" alt="" className="absolute right-10 top-36  z-20 w-4"/>
+            <img src="/images/sata gra.png" alt="" className="absolute top-16 left-44 z-20 animate-pulse"/>
+            <img src="/images/star-grey2.png" alt="" className="absolute right-10 top-36  z-20 w-4 animate-pulse"/>
             <div className="w-full sm:hidden">
                 <Link href="/"><RiArrowLeftSLine  className="text-2xl rounded-full  border border-t-[#903AFF] border-x-[#C530DE] border-b-[#FF26B9] p-1 cursor-pointer flex items-center justify-center relative z-40"/></Link>
             </div>
             <div className="flex flex-col gap-5 relative z-40 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 min-[850px]:w-1/2">
-                <img src="/images/star pu2.png" alt="" className="absolute -left-2 bottom-6 z-20"/>
-                <img src="/images/star2.png" alt="" className="absolute bottom-20 -right-6 z-20 "/> 
+                <img src="/images/star pu2.png" alt="" className="absolute -left-2 bottom-6 z-20 animate-pulse"/>
+                <img src="/images/star2.png" alt="" className="absolute bottom-20 -right-6 z-20 animate-pulse"/> 
                 <h1 className="text-[20px] font-semibold clashDisplay text-[#D434FE] mt-5">Questions or need assistance?<br/> Let us know about it</h1>
                 <p className="text-[12px] font-normal sm:hidden">Email us below to any question related to our event</p>
                 <form action="" className="flex flex-col gap-5 justify-center items-center" onSubmit={onSubmit}>
@@ -74,7 +79,7 @@ import Header from "../components/header";
                 </div>
             </div>
         </div>
-        </div>
+        </motion.div>
      );
 }
  

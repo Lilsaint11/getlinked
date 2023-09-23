@@ -3,7 +3,7 @@ const Footer = () => {
         <div className="bg-[#100B20] flex flex-col items-center  px-[60px]  py-10 gap-16">
             <div className="flex max-sm:flex-col gap-10 w-full">
                 <div className="flex flex-col gap-4 relative w-full">
-                    <img src="/images/star.png" alt="" className="absolute top-24 -left-6 z-20 w-2"/>
+                    <img src="/images/star2.png" alt="" className="absolute top-24 -left-6 z-20 w-2 animate-pulse"/>
                     <h1 className="text-[20px] font-bold clashDisplay text-[#FFEDFF] leading-[15px]">get<span className="text-[#D434FE]">linked</span></h1>
                     
                     <p className="text-[12px] leading-loose">Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology</p>
@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-3 relative w-full sm:items-center">
                     <div className="flex flex-col gap-3">
-                        <img src="/images/star-grey2.png" alt="" className="absolute right-28 top-20  z-20 w-3"/>
+                        <img src="/images/star-grey2.png" alt="" className="absolute right-28 top-20  z-20 w-3 animate-pulse"/>
                         <h1 className="text-[14px] font-bold  text-[#D434FE]">Useful Links</h1>
                         <p className="text-[12px] cursor-pointer">Overview</p>
                         <p className="text-[12px] cursor-pointer">Timeline</p>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-3 relative w-full sm:items-center">
                     <div className="flex flex-col gap-3">
-                        <img src="/images/star.png" alt="" className="absolute top-12 right-3 z-20 w-2"/>
+                        <img src="/images/star2.png" alt="" className="absolute top-12 right-3 z-20 w-2 animate-pulse"/>
                         <h1 className="text-[14px] font-bold  text-[#D434FE]">Contact Us</h1>
                         <div className="flex gap-2 items-center">
                             <img src="images/Group.png" alt=""className="w-3 h-3" />
@@ -47,7 +47,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="relative">
-                <img src="/images/star pu.png" alt="" className="absolute left-10 -top-9 z-20"/>
+                <img src="/images/star pu2.png" alt="" className="absolute left-10 -top-9 z-20 animate-pulse"/>
                 <p className="text-[12px]">All rights reserved. © getlinked Ltd.</p>
             </div>
         </div>

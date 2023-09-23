@@ -18,7 +18,7 @@ const Header = () => {
                     </div>
                     <div className="flex max-sm:flex-col sm:items-center gap-5 sm:gap-8 min-[780px]:gap-10">
                         <Link href="/#timeline"><p className="text-[18px] sm:text-[14px] min-[780px]:text-[16px] sm:font-normal font-medium cursor-pointer" onClick={()=> setMenuOpen(false)}>Timeline</p></Link>
-                        <p className="text-[18px] sm:text-[14px] min-[780px]:text-[16px] sm:font-normal font-medium cursor-pointer" onClick={()=> setMenuOpen(false)}>Overview</p>
+                        <Link href="#overview"><p className="text-[18px] sm:text-[14px] min-[780px]:text-[16px] sm:font-normal font-medium cursor-pointer" onClick={()=> setMenuOpen(false)}>Overview</p></Link>
                         <Link href="/#faqs"><p className="text-[18px] sm:text-[14px] min-[780px]:text-[16px] sm:font-normal font-medium cursor-pointer" onClick={()=> setMenuOpen(false)}>FAQs</p></Link>
                         <Link href="/contact"><p className="text-[18px] sm:text-[14px] min-[780px]:text-[16px] sm:font-normal font-medium cursor-pointer" onClick={()=> setMenuOpen(false)}>Contact</p></Link>
                         <Link href="/register"><button className="w-[172px] sm:w-[122px] min-[780px]:w-[172px] h-[53px] sm:h-[40px] min-[780px]:h-[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[16px] cursor-pointer">Register</button></Link>
