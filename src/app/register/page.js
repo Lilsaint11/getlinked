@@ -50,60 +50,60 @@ const Register = () => {
                     <h1 className="text-[15px] font-bold clashDisplay text-[#D434FE]">Register</h1>
                 </div>
                 <div className="relative z-40 min-[750px]:w-1/2">
-                    <Image width="700" height="700" src="/images/3d-graphic-designer.png" alt="" className="w-[200px] min-[750px]:w-full mt-2"/>
+                    <Image width="700" height="700" src="/images/man.webp" alt="" className="w-[200px] min-[750px]:w-full mt-2"/>
                 </div>
                 <div className="flex flex-col max-sm:items-center justify-center gap-2 relative z-40 min-[750px]:w-1/2 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 rounded-md w-full">
                         <div className="flex items-end gap-3">
-                        <p className="text-[12px] leading-[12px]">Be part of this movement!</p>
+                        <p className="text-[12px] min-[750px]:text-[14px] leading-[12px]">Be part of this movement!</p>
                         <div className="flex border-b border-[#D434FE] border-dashed w-20  justify-center">
                             <img src="/images/girl-walk.png" alt="" className="w-5 h-5"/>
                             <img src="/images/man-walk.png" alt="" className="w-5 h-5"/>
                         </div>
                     </div>
-                    <h1 className="text-[20px] max-[335px]:text-[18px] mb-3">CREATE YOUR ACCOUNT</h1>
+                    <h1 className="text-[20px] min-[750px]:text-[24px] max-[335px]:text-[18px] mb-3">CREATE YOUR ACCOUNT</h1>
                     <form action="" className="flex flex-col gap-5 justify-center items-center" onSubmit={onSubmit}>
-                        <div className="flex max-[750px]:flex-col gap-5 justify-center items-center w-full">
-                            <div className="flex flex-col w-full relative z-40">
-                                <label htmlFor="" className="text-[13px]">Team's Name</label>
-                                <input type="text" placeholder="Enter the name of your group" id="teamName" value={teamName} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full"/>
+                        <div className="flex max-[950px]:flex-col gap-5 justify-center items-center w-full">
+                            <div className="flex flex-col w-full relative z-40 gap-2">
+                                <label htmlFor="" className="text-[13px] min-[750px]:text-[14px]">Team's Name</label>
+                                <input type="text" placeholder="Enter the name of your group" id="teamName" value={teamName} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full" required/>
                             </div>
-                            <div className="flex flex-col w-full">
-                                <label htmlFor="" className="text-[13px]">Phone</label>
-                                <input type="text" placeholder="Enter your phone number" id="phone" value={phone} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full"/>
-                            </div>
-                        </div>
-                        <div className="flex max-[750px]:flex-col gap-5 justify-center items-center w-full">
-                            <div className="flex flex-col w-full">
-                                <label htmlFor="" className="text-[13px]">Email</label>
-                                <input type="text" placeholder="Enter your email address" id="email" value={email} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full"/>
-                            </div>
-                            <div className="flex flex-col w-full">
-                                <label htmlFor="" className="text-[13px]">Project Topic</label>
-                                <input type="text" placeholder="What is your group project topic" id="topic" value={topic} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full"/>
+                            <div className="flex flex-col w-full gap-2">
+                                <label htmlFor="" className="text-[13px] min-[750px]:text-[14px]">Phone</label>
+                                <input type="text" placeholder="Enter your phone number" id="phone" value={phone} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full" required/>
                             </div>
                         </div>
-                        <div className="flex w-full gap-5">
-                            <div className="flex flex-col w-full">
-                                <label htmlFor="" className="text-[13px]">Category</label>
-                                <select name="category" id="category" value={category} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent pr-2">
+                        <div className="flex max-[950px]:flex-col gap-5 justify-center items-center w-full">
+                            <div className="flex flex-col w-full gap-2">
+                                <label htmlFor="" className="text-[13px] min-[750px]:text-[14px]">Email</label>
+                                <input type="text" placeholder="Enter your email address" id="email" value={email} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full" required/>
+                            </div>
+                            <div className="flex flex-col w-full gap-2">
+                                <label htmlFor="" className="text-[13px] min-[750px]:text-[14px]">Project Topic</label>
+                                <input type="text" placeholder="What is your group project topic" id="topic" value={topic} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent w-full" required/>
+                            </div>
+                        </div>
+                        <div className="flex w-full gap-5 ">
+                            <div className="flex flex-col w-full gap-2">
+                                <label htmlFor="" className="text-[13px] min-[750px]:text-[14px]">Category</label>
+                                <select name="category" id="category" value={category} onChange={onChange} className="text-[13px] pl-5 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent pr-2" required>
                                     <option value="" className="bg-[#150E28]">Select your category</option>
                                     <option value="category1" className="bg-[#150E28]">category 1</option>
                                 </select>
                             </div>
-                            <div className="flex flex-col w-full">
-                                <label htmlFor="" className="text-[13px]">Group Size</label>
-                                <select name="groupSize" id="groupSize" value={groupSize} onChange={onChange} className="text-[13px] pl-5 pr-2 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent">
+                            <div className="flex flex-col w-full gap-2">
+                                <label htmlFor="" className="text-[13px] min-[750px]:text-[14px]">Group Size</label>
+                                <select name="groupSize" id="groupSize" value={groupSize} onChange={onChange} className="text-[13px] pl-5 pr-2 rounded-sm h-[39px] border border-white focus:outline-none bg-transparent" required>
                                     <option value="" className="bg-[#150E28]">Select</option>
                                     <option value="Select1"className="bg-[#150E28]" >Select 1</option>
                                 </select>
                             </div>
                         </div>
-                        <p className="text-[9px] italic text-[#FF26B9] w-full">Please review your registration details before submitting</p>
-                        <div className="flex items-start gap-2 sm:w-full">
-                            <input type="checkbox" name="policy" id="policy" value={policy} onChange={onChange}  className="cursor-pointer"/>
-                            <p className="text-[10px]">I agreed with the event terms and conditions and privacy policy</p>
+                        <p className="text-[9px] min-[750px]:text-[12px] italic text-[#FF26B9] w-full">Please review your registration details before submitting</p>
+                        <div className="flex items-start gap-2 items-center sm:w-full">
+                            <input type="checkbox" name="policy" id="policy" value={policy} onChange={onChange}  className="cursor-pointer" required/>
+                            <p className="text-[10px] min-[750px]:text-[12px]">I agreed with the event terms and conditions and privacy policy</p>
                         </div>
-                        <button className="w-[172px] h-[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[16px]">Submit</button>
+                        <button  className="w-[172px] sm:w-full h-[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[16px] cursor-pointer"  disabled>Submit</button>
                     </form>
                 </div>
             </div>

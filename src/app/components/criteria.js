@@ -6,7 +6,7 @@ const Criteria = () => {
              <img src="/images/star pu.png" alt="" className="absolute top-0 left-40 z-20 w-3"/>
              <img src="/images/star-grey.png" alt="" className="absolute top-52 right-48 z-20 w-2"/>
              <div className="relative min-[850px]:w-1/2">
-                <Image src="/images/8046554 1.png" width="500" height="500" className="z-50 relative" alt=""/>
+                <Image src="/images/farm.png" width="500" height="500" className="z-50 relative" alt=""/>
                 <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -bottom-32 -left-28"/>
              </div>
              <div className="flex flex-col gap-5 max-[850px]:items-center justify-center relative z-40 min-[850px]:w-1/2">

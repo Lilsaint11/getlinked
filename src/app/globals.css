@@ -35,6 +35,11 @@ html {
   src: url(Volkhov-Regular.ttf);
 }
 
+@font-face {
+  font-family: madeTommy;
+  src: url(MADE-TOMMY-Medium-Outline.otf);
+}
+
 .clashDisplay {
   font-family: clashDisplay;
 }
@@ -55,4 +60,8 @@ html {
 }
 .volkhov {
   font-family: Volkhov-Regular;
+}
+
+.madeTommy {
+  font-family: madeTommy;
 }

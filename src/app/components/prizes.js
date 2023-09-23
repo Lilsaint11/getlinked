@@ -6,19 +6,19 @@ const Prizes = () => {
              <img src="/images/sata gra.png" alt="" className="absolute top-7 left-12 z-20 w-2"/>
              <img src="/images/sata gra.png" alt="" className="absolute top-16 right-20 z-20"/>
             <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -top-10 -left-5"/>
-            <div className="flex flex-col justify-center items-center relative z-40 w-full sm:items-end ">
-                <div className="flex flex-col sm:w-1/2 ">
-                    <h1 className="text-[20px]  sm:text-[32px] clashDisplay font-bold max-sm:text-center max-w-[200px] w-full">Prizes and 
+            <div className="flex flex-col justify-center items-center relative z-40 w-full min-[850px]:items-end ">
+                <div className="flex flex-col max-[850px]:items-center min-[850px]:w-1/2 ">
+                    <h1 className="text-[20px]  sm:text-[32px] clashDisplay font-bold max-[850px]:text-center max-w-[200px] w-full">Prizes and 
                    <br/> <span className="text-[#D434FE]"> Rewards</span>
                     </h1>
-                    <p  className="text-[12px] sm:text-[16px] max-sm:text-center leading-loose sm:max-w-[400px]">Highlight of the prizes or rewards for winners and for participants.</p>
+                    <p  className="text-[12px] sm:text-[16px] max-[850px]:text-center leading-loose min-[850px]:max-w-[400px]">Highlight of the prizes or rewards for winners and for participants.</p>
                 </div>
             </div>
             <div className="flex flex-col items-center gap-36">
                 <div className="flex max-sm:flex-col items-center justify-center max-sm:gap-36 sm:gap-5 sm:mt-20">
                     <div className="relative sm:-mt-20">
                         <img src="/images/star.png" alt="" className="absolute -bottom-8 left-7 z-20 w-2"/>
-                        <Image src="/images/9486889 1.png" width="400" height="400" alt="image" className="relative z-40"/>
+                        <Image src="/images/cup.png" width="400" height="400" alt="image" className="relative z-40"/>
                     </div>
                     <div className="flex justify-between items-center w-full gap-5 relative z-40 sm:w-1/2 ">
                         <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -bottom-16 -right-20 rotate-180"/>
@@ -48,39 +48,39 @@ const Prizes = () => {
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center w-full gap-10 relative">
-                    <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -top-32 -left-20"/>
+                    <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -top-32 -left-20 min-[1000px]:-left-72"/>
                     <div className="flex flex-col justify-center items-center w-full gap-3 relative z-40">
                         <h1 className="clashDisplay text-[20px] sm:text-[32px] font-bold">Partners and Sponsors</h1>
                         <p className="text-[12px] sm:text-[14px] max-w-[447px] font-normal text-center">Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
                     </div>
-                    <div className="flex flex-col justify-center gap-3 items-center border border-[#D434FE] rounded-md w-full h-[150px] sm:h-[360px] p-10 max-[400px]:p-5 max-[340px]:p-2 sm:p-20 sm:px-32 w-full mb-10 relative z-40">
+                    <div className="flex flex-col justify-center gap-3 items-center border border-[#D434FE] rounded-md w-full h-[150px] sm:h-[360px] p-10 max-[400px]:p-5 max-[340px]:p-2 sm:p-20 sm:px-0 min-[900px]:max-w-[700px] mb-10 relative z-40">
                             <img src="/images/star pu.png" alt="" className="absolute left-5 top-0 z-20"/>
                             <img src="/images/star.png" alt="" className="absolute -bottom-0 right-8 z-20 w-3"/>
                             <div className="flex justify-between items-center h-full w-full">
                                 <div className="w-full flex justify-center">
-                                    <img src="/images/Liberty2.png" alt="" className="h-10 max-[350px]:h-8 w-[50px] sm:h-16 sm:w-[100px] max-[350px]:w-[40px]"/>
+                                    <img src="/images/Liberty company logo white colour.png" alt="" className="h-10 max-[350px]:h-8 w-[50px] sm:h-16 sm:w-2/5 max-[350px]:w-[40px]"/>
                                 </div>
                                 <div className="flex justify-center gap-3 sm:gap-10 items-center w-full">
                                     <span className="flex bg-[#D434FE] w-[2px] h-10"></span>
-                                    <img src="/images/Libertywhite.png" alt="" className="w-16 sm:w-[150px] flex justify-center"/>
+                                    <img src="/images/Liberty company logo white.png" alt="" className="w-16 sm:w-36 flex justify-center"/>
                                     <span className="flex bg-[#D434FE] w-[2px] h-10"></span>
                                 </div>
                                 <div className="w-full flex justify-center">
-                                    <img src="/images/Winwise.png" alt="" className="w-[40px] max-[350px]:w-[30px] sm:h-16 sm:w-[100px]"/>
+                                    <img src="/images/Winwise logo White colour 1.png" alt="" className="w-[40px] max-[350px]:w-[30px] sm:h-16 sm:w-2/5"/>
                                 </div>
                             </div>
                             <div className="flex justify-between items-center w-full gap-5">
                                 <span className="flex bg-[#D434FE] w-full h-[2px]"></span>
-                                <span className="flex bg-[#D434FE] w-[230px] sm:w-[610px] h-[2px]"></span>
+                                <span className="flex bg-[#D434FE] w-[200px] sm:w-[610px] min-[900px]:w-[660px]  h-[2px]"></span>
                                 <span className="flex bg-[#D434FE] w-full h-[2px]"></span>
                             </div>
                             <div className="flex justify-between items-center h-full w-full">
                                 <div className="w-full flex justify-center">
-                                    <img src="/images/wisper.png" alt=""  className="h-10 max-[350px]:h-8 w-[50px] sm:h-16 sm:w-[100px] max-[350px]:w-[40px]"/>
+                                    <img src="/images/wisper logo white.png" alt=""  className="h-10 max-[350px]:h-8 w-[50px] sm:h-16 sm:w-2/5 max-[350px]:w-[40px]"/>
                                 </div>
                                 <div className="flex justify-center gap-3 sm:gap-10 items-center w-full">
                                     <span className="flex bg-[#D434FE] w-[2px] h-10"></span>
-                                    <h1 className="text-[12px] sm:text-[41px] w-16 sm:w-[150px] flex justify-center typo_hoop">Pay<span className="text-[#00A3FF]">box</span></h1>
+                                    <h1 className="text-[12px] sm:text-[35px] w-16 sm:w-full flex justify-center typo_hoop">Pay<span className="text-[#00A3FF]">box</span></h1>
                                     <span className="flex bg-[#D434FE] w-[2px] h-10"></span>
                                 </div>
                                 <div className="w-full flex justify-center sm:pt-5">
@@ -92,7 +92,7 @@ const Prizes = () => {
                             </div>
                             
                     </div>
-                    <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -bottom-48 -right-20 rotate-180"/>
+                    <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -bottom-48 -right-20 rotate-180 min-[1000px]:-right-72" />
                 </div>
             </div>
         </div>

@@ -5,8 +5,7 @@ const Intro = () => {
         <div className="flex max-sm:flex-col sm:gap-10 justify-center max-[830px]:items-center mt-5 px-10 max-[345px]:px-5 sm:border-b sm:border-slate-500 sm:py-10">
             <div className="flex flex-col justify-center items-center relative sm:w-1/2">
                 <img src="/images/sata gra.png" alt="" className="absolute top-28 left-0 z-20"/>
-                <Image src="/images/idea.png" width="300" height="250" alt=""/>
-                <img src="/images/arrow.png" alt="" className="w-7 mt-3"/>
+                <Image src="/images/idea.webp" width="300" height="250" alt=""/>
             </div>
             <div className="mt-5 relative flex flex-col max-[830px]:justify-center min-[830px]:pt-[60px] items-center sm:w-1/2">
                <img src="/images/star pu.png" alt="" className="absolute top-8 right-5 z-20"/>

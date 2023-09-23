@@ -1,24 +1,24 @@
 const PrivacyPolicy = () => {
     return ( 
-        <div className="flex max-sm:flex-col px-8 sm:px-16 pt-10 pb-40 gap-10 mt-5 relative justify-center">
-            <div className="flex flex-col gap-10 sm:w-1/2">
+        <div className="flex max-[850px]:flex-col px-8 sm:px-16 pt-10 pb-40 gap-10 mt-5 relative justify-center max-[850px]:items-center">
+            <div className="flex flex-col gap-10 min-[850px]:w-full">
                 <div  className="flex flex-col  justify-center items-center gap-10">
                     <div className="flex flex-col  justify-center max-sm:items-center gap-1 relative w-full">
                         <img src="/images/star-grey.png" alt="" className="absolute right-3 -top-6  z-20 "/>
-                        <h1 className="text-[20px] sm:text-[32px] clashDisplay font-bold max-sm:text-center max-w-[200px] sm:max-w-full">Privacy Policy and<br/>
+                        <h1 className="text-[20px] sm:text-[32px] clashDisplay font-bold max-[850px]:text-center max-w-[200px] sm:max-w-full">Privacy Policy and<br/>
                             <span className="text-[#D434FE]"> Terms</span>
                         </h1>
-                        <p  className="text-[12px] sm:text-[14px] max-sm:text-center leading-loose">Last updated on September 12, 2023</p>
+                        <p  className="text-[12px] sm:text-[14px] max-[850px]:text-center leading-loose">Last updated on September 12, 2023</p>
                     </div>
                     <div className="relative">
                         <img src="/images/star pu.png" alt="" className="absolute right-8 bottom-0 z-2 w-3"/>
-                        <p  className="text-[12px] sm:text-[14px] max-sm:text-center leading-loose">Below are our privacy and policy, which outline a lot of goodies. it’s our aim to always take of our participant</p>
+                        <p  className="text-[12px] sm:text-[14px] max-[850px]:text-center leading-loose">Below are our privacy and policy, which outline a lot of goodies. it’s our aim to always take of our participant</p>
                     </div>
                     
                 </div>
                 <div className="text-[12px] gap-10 flex flex-col justify-center items-center border border-[#D434FE] px-5 py-16 rounded-md relative">
                     <p  className="text-center leading-loose">At getlinked tech Hackathon 1.0, we value your privacy and are committed to protecting your personal information.This Privacy Policy outlines how we collect,use, disclose, and safeguard your data when you participate in our tech hackathon event. By participating in our event, you consent to the practices described in this policy.</p>
-                    <div className="w-full gap-2 flex flex-col  relative z-40">
+                    <div className="w-full gap-2 flex flex-col max-[850px]:items-center  relative z-40">
                         <h2  className="text-[13px] text-[#D434FE] font-bold">Licensing Policy</h2>
                         <p  className="font-bold">Here are terms of our Standard License:</p>
                     </div>
@@ -37,10 +37,10 @@ const PrivacyPolicy = () => {
                     <img src="/images/star pu.png" alt="" className="absolute  bottom-48 -left-4 z-2 w-3"/>
                 </div>
             </div>
-            <div className="relative flex max-sm:items-center justify-center sm:h-96 sm:w-1/2">
-                <div className="relative flex max-sm:items-center justify-center ">
-                    <img src="/images/lock.png" alt="" />
-                    <img src="/images/08 1.png" alt="" className="absolute -bottom-32 sm:-bottom-24 right-10"/>
+            <div className="relative flex max-[850px]:items-center justify-center sm:h-96 sm:w-1/2 sm:w-full max-[850px]:my-40">
+                <div className="relative flex max-[850px]:items-center justify-center w-full">
+                    <img src="/images/safe.png" alt="" className="min-[850px]::w-full  min-[850px]:h-[500px]"/>
+                    <img src="/images/manlck.png" alt="" className="absolute -bottom-32 min-[850px]:-bottom-[260px] min-[1000px]:-bottom-[460px] right-8 max-sm:right-6"/>
                     <img src="/images/star pu.png" alt="" className="absolute left-0 top-20 z-20 w-3"/>
                     <img src="/images/star.png" alt="" className="absolute top-24 right-20 z-20 w-2"/>
                     <img src="/images/star.png" alt="" className="absolute -bottom-16 left-7 z-20 w-2"/>

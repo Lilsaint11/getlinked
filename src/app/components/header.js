@@ -8,7 +8,7 @@ const Header = () => {
     return ( 
         <div className="relative z-50">       
             <div className=" py-5 flex justify-between items-center border-b border-slate-500 px-10 min-[850px]:px-16">
-                <h1 className="text-[18px] font-bold clashDisplay text-[#FFEDFF]">get<span className="text-[#D434FE]">linked</span></h1>
+                <Link href="/"><h1 className="text-[18px] sm:ext-[36px] font-bold clashDisplay text-[#FFEDFF]">get<span className="text-[#D434FE]">linked</span></h1></Link>
                 <div className="cursor-pointer sm:hidden" onClick={()=> setMenuOpen(true)}>
                     <img src="/images/vector.png" alt=""/>
                 </div>

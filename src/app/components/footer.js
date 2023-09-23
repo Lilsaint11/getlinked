@@ -24,10 +24,10 @@ const Footer = () => {
                         <p className="text-[12px] cursor-pointer">Register</p>
                         <div className="flex gap-4 items-center">
                             <p className="text-[12px] text-[#D434FE]">Follow us</p>
-                            <img src="images/mdi_instagram.png" alt="" className="w-5 h-5 cursor-pointer hover:scale-110 transition duration-300"/>
-                            <img src="images/x.png" alt=""className="w-4 h-4 cursor-pointer hover:scale-110 transition duration-300" />
-                            <img src="images/fb.png" alt="" className="w-3 h-4 cursor-pointer hover:scale-110 transition duration-300"/>
-                            <img src="images/in.png" alt="" className="w-4 h-4 cursor-pointer hover:scale-110 transition duration-300"/>
+                            <img src="images/mdi_instagram.png" alt="" className="w-5 h-5 cursor-pointer hover:scale-110 transition duration-500"/>
+                            <img src="images/x.png" alt=""className="w-4 h-4 cursor-pointer hover:scale-110 transition duration-500" />
+                            <img src="images/fb.png" alt="" className="w-3 h-4 cursor-pointer hover:scale-110 transition duration-500"/>
+                            <img src="images/in.png" alt="" className="w-4 h-4 cursor-pointer hover:scale-110 transition duration-500"/>
                         </div>
                     </div>
                 </div>

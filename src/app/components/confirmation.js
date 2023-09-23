@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const Confirmation = () => {
     return ( 
@@ -17,7 +18,7 @@ const Confirmation = () => {
                         <p className="text-[12px] sm:text-[14px] font-medium sm:font-semibold text-center flex items-center gap-1">check your mail box for next step <img src="/images/wink.png" alt="" className="w-[14px] h-[14px]"/></p>
                     </div>
                 </div>
-                <button className="w-full h-[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[16px]">Back</button>
+                <Link href="/"><button className="w-full h-[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[16px]">Back</button></Link>
             </div>
         </div>
      );

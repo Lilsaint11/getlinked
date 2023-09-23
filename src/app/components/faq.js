@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Faq = () => {
     return ( 
-        <div className="flex max-sm:flex-col justify-center items-center px-10 border-b border-slate-500 py-20 gap-10" id="faqs">
+        <div className="flex max-sm:flex-col justify-center items-center px-10 border-b border-slate-500 py-24 gap-10" id="faqs">
             <div className="sm:w-1/2">
                 <div className="flex flex-col  justify-center max-sm:items-center gap-3 relative">
                 <img src="/images/star pu.png" alt="" className="absolute -top-3 left-5 z-20 w-3"/>
@@ -38,12 +38,12 @@ const Faq = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative sm:w-1/2">
-                <img src="/images/sata gra.png" alt="" className="absolute -top-4 left-36 z-20"/>
-                <img src="/images/star pu.png" alt="" className="absolute left-16 top-24 z-20"/>
+            <div className="relative sm:w-1/2 max-sm:pt-12">
                 <img src="/images/star.png" alt="" className="absolute -bottom-1 right-16 z-20 w-4"/>
                 <img src="/images/star-grey.png" alt="" className="absolute left-6 top-36  z-20 w-2"/>
-                <Image src="/images/cwok_casual_21 1.png" width="500" height="500" alt=""/>
+                <div className="relative">
+                    <Image src="/images/thinker.webp" width="500" height="500" alt=""/>
+                </div>
             </div>
         </div>
      );
