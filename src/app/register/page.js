@@ -4,8 +4,17 @@ import { useState } from "react";
 import Confirmation from "../components/confirmation";
 import Header from "../components/header";
 import { motion } from "framer-motion"
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Register = () => {
+    useEffect(() => {
+        AOS.init({
+          easing: "ease-in-out",
+          duration: 700,
+        });
+      }, []);
     const[registered, setRegistered] = useState(false)
       //stores form content into a state called formData which can be reset later
       const [formData, setFormData] = useState({
@@ -53,10 +62,10 @@ const Register = () => {
                 <div className="w-full sm:hidden">
                     <h1 className="text-[15px] font-bold clashDisplay text-[#D434FE]">Register</h1>
                 </div>
-                <div className="relative z-40 min-[750px]:w-1/2">
+                <div className="relative z-40 min-[750px]:w-1/2" data-aos="fade-up">
                     <Image width="700" height="700" src="/images/man.webp" alt="" className="w-[200px] min-[750px]:w-full mt-2"/>
                 </div>
-                <div className="flex flex-col max-sm:items-center justify-center gap-2 relative z-40 min-[750px]:w-1/2 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 rounded-md w-full">
+                <div className="flex flex-col max-sm:items-center justify-center gap-2 relative z-40 min-[750px]:w-1/2 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 rounded-md w-full" data-aos="fade-up" data-aos-delay="200">
                 <h1 className="text-[32px] font-semibold clashDisplay text-[#D434FE] max-sm:hidden">Register</h1>
                         <div className="flex items-end gap-3">
                         <p className="text-[12px] min-[750px]:text-[14px] leading-[12px]">Be part of this movement!</p>

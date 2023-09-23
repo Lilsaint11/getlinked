@@ -3,8 +3,18 @@ import Link from "next/link";
 import { useState } from "react";
 import { RiArrowLeftSLine } from 'react-icons/ri';
 import { motion } from "framer-motion"
+import AOS from "aos";
+import Image from "next/image";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Header from "../components/header";
  const Contact = () => {
+    useEffect(() => {
+        AOS.init({
+          easing: "ease-in-out",
+          duration: 700,
+        });
+      }, []);
      //stores form content into a state called formData which can be reset later
     const [formData, setFormData] = useState({
         teamName: "",
@@ -47,7 +57,7 @@ import Header from "../components/header";
             <div className="w-full sm:hidden">
                 <Link href="/"><RiArrowLeftSLine  className="text-2xl rounded-full  border border-t-[#903AFF] border-x-[#C530DE] border-b-[#FF26B9] p-1 cursor-pointer flex items-center justify-center relative z-40"/></Link>
             </div>
-            <div className="flex flex-col gap-5 relative z-40 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 min-[850px]:w-1/2">
+            <div className="flex flex-col gap-5 relative z-40 sm:p-10 sm:backdrop-opacity-10 sm:bg-[#903AFF]/10 min-[850px]:w-1/2" data-aos="fade-up" data-aos-delay="200">
                 <img src="/images/star pu2.png" alt="" className="absolute -left-2 bottom-6 z-20 animate-pulse"/>
                 <img src="/images/star2.png" alt="" className="absolute bottom-20 -right-6 z-20 animate-pulse"/> 
                 <h1 className="text-[20px] font-semibold clashDisplay text-[#D434FE] mt-5">Questions or need assistance?<br/> Let us know about it</h1>
@@ -60,7 +70,7 @@ import Header from "../components/header";
                     <button className="w-[172px] h-[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[16px]">Submit</button>
                 </form>
             </div>
-            <div className="relative z-40 flex flex-col gap-5 min-[850px]:pt-16">
+            <div className="relative z-40 flex flex-col gap-5 min-[850px]:pt-16" data-aos="fade-up">
                 <div className="flex flex-col gap-5 max-[850px]:hidden">
                     <h1 className="text-[32px] clashDisplay font-semibold text-[#D434FE]">Get in touch</h1>
                     <p className="text-[16px]">Contact<br/> Information</p>

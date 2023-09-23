@@ -1,10 +1,12 @@
 "use client";
 import Link from "next/link";
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import Typed from 'typed.js';
 
 const Hero = () => {
     const typewriter = useRef(null);
+    let interval = useRef();
+    const [hrs,setHrs] = useState('00')
     useEffect(() => {
   
         const typed = new Typed(typewriter.current, {
@@ -18,6 +20,28 @@ const Hero = () => {
           typed.destroy();
         };
       }, []);
+      const startTimer = () => {
+      interval = setInterval(()=>{
+        let  now = new Date().getTime();
+        let distance = timerDate - now;
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)))
+        let mins = Math.floor((distance % (1000 * 60 * 60 ) / (1000 * 60 )))
+        let secs = Math.floor((distance % (1000 * 60 * 60 * 24))) 
+        if (distance < 0){
+            clearInterval(interval.current)
+        }else{
+            setHrs(hours)
+        }
+     },1000);
+      } 
+      
+      useEffect(() => {
+        //startTimer()
+        return () => {
+            clearInterval(interval.current)
+        }
+      }, []);
+      
     return ( 
         <div className="flex flex-col max-[1000px]:text-[80px]justify-center items-center pt-10 px-10 min-[850px]:px-16 max-[415px]:px-5 montserrat z-40 relative  sm:border-b sm:border-slate-500 w-full" data-aos="zoom-out">
             <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute -z-10 -top-20 left-0"/>
@@ -48,7 +72,7 @@ const Hero = () => {
                     
                         <Link href="/register"><button className="w-[152px] sm:w-[172px] h-[47px] sm:h[53px] bg-gradient-to-r from-[#FE34B9] to-[#903AFF] rounded-md text-[14px] sm:text-[16px] mt-5">Register</button></Link>
                     </div>
-                    <h1 className="unicaOne text-[48px] sm:text-[64px] mt-5 leading-[45px]">00<span className="montserrat text-[14px]">H</span>   00<span className="montserrat text-[14px]">M</span>  00<span className="montserrat text-[14px]">S</span></h1>
+                    <h1 className="unicaOne text-[48px] sm:text-[64px] mt-5 leading-[45px]">{hrs}<span className="montserrat text-[14px]">H</span>   00<span className="montserrat text-[14px]">M</span>  00<span className="montserrat text-[14px]">S</span></h1>
                 </div>
                 <div className="relative flex justify-center items-center sm:w-1/2">
                     <img src="/images/man-wearing-smart-glasses-touching-virtual-screen 1.png" alt="" className="w-full"/>
