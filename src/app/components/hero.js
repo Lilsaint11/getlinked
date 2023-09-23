@@ -1,11 +1,33 @@
+"use client";
 import Link from "next/link";
+import { useRef, useEffect } from 'react';
+import Typed from 'typed.js';
 
 const Hero = () => {
+    const typewriter = useRef(null);
+    useEffect(() => {
+  
+        const typed = new Typed(typewriter.current, {
+          strings: ["Igniting a Revolution in HR Innovation"],
+          typeSpeed:70,
+          showCursor: false,
+        });
+    
+        return () => {
+          // Destroy Typed instance during cleanup to stop animation
+          typed.destroy();
+        };
+      }, []);
     return ( 
         <div className="flex flex-col max-[1000px]:text-[80px]justify-center items-center pt-10 px-10 min-[850px]:px-16 max-[415px]:px-5 montserrat z-40 relative  sm:border-b sm:border-slate-500 w-full">
             <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute -z-10 -top-20 left-0"/>
             <div className="sm:flex sm:w-full sm:justify-end">
-                <h3 className="italic text-[16px] sm:text-[20px] min-[850px]:text-[28px] min-[1000px]:text-[36px] font-bold  flex max-[415px]:text-[14px]  max-[350px]:flex-col gap-1 mb-10 text-center">Igniting a Revolution in <span className="flex flex-col items-center">HR Innovation<img src="/images/pink-curve.png" alt="" /></span> </h3>
+                <div className="flex flex-col mb-10">
+                    <h3 className="italic text-[16px] sm:text-[20px] min-[850px]:text-[28px] min-[1000px]:text-[36px] font-bold  flex max-[415px]:text-[14px]  max-[350px]:flex-col gap-1 text-center" ref={typewriter}> </h3>
+                    <div className="w-full flex justify-end">
+                        <img src="/images/Vector 4.png" alt="" className="w-36 min-[850px]:w-72"/>
+                    </div>
+                </div>
             </div>
         
             <div className="sm:flex min-[1000px]:justify-between w-full">

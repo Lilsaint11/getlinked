@@ -13,7 +13,7 @@ const Header = () => {
                     <img src="/images/vector.png" alt=""/>
                 </div>
                <div className={`flex flex-col gap-10 max-sm:w-[348px] max-sm:h-[492px] bg-[#150E28] max-sm:absolute top-0 z-50  max-sm:py-3  max-sm:px-12 max-sm:rounded-md transition duration-500 right-0 ${!menuOpen && "max-sm:translate-x-[350px]"} ${menuOpen && "translate-x-0"}`}>
-                    <div className="flex justify-end w-full sm:hidden">
+                    <div className="flex justify-end w-full visible sm:hidden">
                         <AiOutlineClose className='text-2xl rounded-full border border-t-[#903AFF] border-x-[#C530DE] border-b-[#FF26B9] cursor-pointer p-1' onClick={()=> setMenuOpen(false)}/>
                     </div>
                     <div className="flex max-sm:flex-col sm:items-center gap-5 sm:gap-8 min-[780px]:gap-10">
