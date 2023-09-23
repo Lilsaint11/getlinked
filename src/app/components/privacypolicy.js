@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
                     <img src="/images/star pu2.png" alt="" className="absolute  bottom-48 -left-4 z-2 w-3 animate-pulse"/>
                 </div>
             </div>
-            <div className="relative flex max-[850px]:items-center justify-center sm:h-96 sm:w-1/2 sm:w-full max-[850px]:my-40"  data-aos="fade-left">
+            <div className="relative flex max-[850px]:items-center justify-center sm:h-96 sm:w-1/2 sm:w-full max-[850px]:my-40"  data-aos="fade-up-left">
                 <div className="relative flex max-[850px]:items-center justify-center w-full">
                     <img src="/images/safe.png" alt="" className="min-[850px]::w-full  min-[850px]:h-[500px]"/>
                     <img src="/images/manlck.png" alt="" className="absolute -bottom-32 min-[850px]:-bottom-[260px] min-[1000px]:-bottom-[460px] right-8 max-sm:right-6 animate-pulse"/>

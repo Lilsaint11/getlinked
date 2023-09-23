@@ -7,6 +7,8 @@ import { motion } from "framer-motion"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { RiArrowLeftSLine } from 'react-icons/ri';
+import Link from "next/link";
 
 const Register = () => {
     useEffect(() => {
@@ -54,6 +56,9 @@ const Register = () => {
                 <Header />
             </div>
             <div className="flex max-[750px]:flex-col gap-5 bg-[#150E28] text-white py-10 px-12 max-[335px]:px-5 items-center justify-center relative ">
+            <div className="w-full sm:hidden">
+                <Link href="/"><RiArrowLeftSLine  className="text-2xl rounded-full  border border-t-[#903AFF] border-x-[#C530DE] border-b-[#FF26B9] p-1 cursor-pointer flex items-center justify-center relative z-40"/></Link>
+            </div>
                 {registered &&<Confirmation registered={registered} setRegistered={setRegistered}/>}
                 <img src="/images/Purple-Lens-Flare-PNG.png" alt="" className="absolute z-10 -top-1 -left-7"/>
                 <img src="/images/sata gra.png" alt="" className="absolute right-16 top-48  z-20 animate-pulse"/>
